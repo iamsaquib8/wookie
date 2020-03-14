@@ -1,0 +1,13 @@
+# action.yml
+name: 'Tracker For Discord'
+description: 'An Issue tracker for github repository which will send it as a message to discord'
+author: 'IamSaquib'
+
+input:
+    discordapp_url:
+        description: "discordapp url"
+        required: true
+
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
